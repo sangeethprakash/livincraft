@@ -1676,7 +1676,7 @@ h6 {
 }
 #header.header-scrolled {
   transition: all 0.5s;
-  background-color: rgba(34, 34, 34, 0.9);
+  background-color: #b8b8b8;
 }
 @media (max-width: 673px) {
   #logo {

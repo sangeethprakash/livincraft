@@ -1,68 +1,66 @@
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header-top{
+.header-top {
   font-size: 12px;
-  padding:8px;
-  a{
-    color:#fff;
+  padding: 8px;
+  a {
+    color: #fff;
   }
-  ul li{
-    display:inline-block;
+  ul li {
+    display: inline-block;
     margin-left: 15px;
   }
 
-
-  .header-top-right{
-    text-align:right;
-    i{
+  .header-top-right {
+    text-align: right;
+    i {
       @include transition();
     }
-    a{
-      margin-right:10px;
+    a {
+      margin-right: 10px;
     }
-    a:hover{
+    a:hover {
       @include transition();
-      i{
-        color:$primary-color;
+      i {
+        color: $primary-color;
       }
     }
   }
 
-  .header-top-left{
+  .header-top-left {
     text-align: left;
-    a{
-        margin-right:10px;
+    a {
+      margin-right: 10px;
     }
   }
-  .lnr{
-    display:none;
+  .lnr {
+    display: none;
   }
-  @media(max-width:588px){
-    .lnr{
-      display:block;
-      font-weight:bold;
+  @media (max-width: 588px) {
+    .lnr {
+      display: block;
+      font-weight: bold;
       font-size: 16px;
-      color:$white;
+      color: $white;
     }
-    .text{
-      display:none;
+    .text {
+      display: none;
     }
   }
-  @media(max-width:767px){
-    display:none;
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
-.top-head-btn{
-  background:$primary-color;
-  padding:9px 26px;
+.top-head-btn {
+  background: $primary-color;
+  padding: 9px 26px;
 }
 
-.main-menu{
-  padding-top:20px ;
-  border-top:1px solid #39353e;
+.main-menu {
+  padding-top: 20px;
+  border-top: 1px solid #39353e;
 }
 
 #header {
@@ -77,12 +75,12 @@
 
 #header.header-scrolled {
   transition: all 0.5s;
-  background-color: rgba($black,.9);
+  background-color: #b8b8b8;
 }
 
-@media(max-width:673px){
-  #logo{
-      margin-left:20px;
+@media (max-width: 673px) {
+  #logo {
+    margin-left: 20px;
   }
 }
 
@@ -95,7 +93,8 @@
   letter-spacing: 3px;
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
+#header #logo h1 a,
+#header #logo h1 a:hover {
   color: #000;
   padding-left: 10px;
   border-left: 4px solid $primary-color;
@@ -115,12 +114,12 @@
   }
 }
 
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu, .nav-menu * {
+.nav-menu,
+.nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -189,13 +188,14 @@
   text-decoration: none;
   display: inline-block;
   color: $white;
-  font-weight:500;  
+  font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
   outline: none;
 }
 
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
   // color: $primary-color;
 }
 
@@ -209,8 +209,6 @@
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: #fff;
 }
-
-
 
 .nav-menu ul li {
   transition: 0.3s;
@@ -231,7 +229,7 @@
 
 .nav-menu ul ul {
   margin-right: 10px;
-  margin-top:0;
+  margin-top: 0;
 }
 
 /* Mobile Nav Toggle */
@@ -251,15 +249,15 @@
 
 #mobile-nav-toggle i {
   color: $white;
-  font-weight: 900;  
+  font-weight: 900;
 }
 
 @media (max-width: 960px) {
   #mobile-nav-toggle {
     display: inline;
   }
-  #nav-menu-container{
-    display:none;
+  #nav-menu-container {
+    display: none;
   }
 }
 
@@ -353,5 +351,3 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
-
-
