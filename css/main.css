@@ -1808,7 +1808,7 @@ h6 {
   z-index: 999;
   top: 18px;
   border: 0;
-  background: none;
+  background: gray;
   font-size: 24px;
   display: none;
   transition: all 0.4s;
