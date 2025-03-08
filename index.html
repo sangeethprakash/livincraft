@@ -113,8 +113,21 @@
       var x = document.getElementsByTagName("script")[0];
       x.parentNode.insertBefore(s, x);
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("loader").style.display = "none";
+      });
+
+      window.addEventListener("beforeunload", function () {
+        document.getElementById("loader").style.display = "flex";
+      });
+    </script>
   </head>
   <body>
+    <!-- Loader -->
+    <div id="loader">
+      <img src="img/loader.gif" alt="Loading..." />
+    </div>
     <header id="header" id="home">
       <div class="header-top" id="header-top">
         <div class="container">
