@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
   <head>
-    <!-- Mobile Specific Meta -->
+    <!-- Mobile Friendly Meta -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/fav.png" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/Livincraft_chat.png" />
+
     <!-- Author Meta -->
-    <meta name="author" content="colorlib" />
-    <!-- Meta Description -->
-    <meta name="description" content="" />
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="" />
+    <meta
+      name="author"
+      content="LivinCraft - Best Interior Designers in Trivandrum"
+    />
+
+    <!-- SEO Optimized Meta Description -->
+    <meta
+      name="description"
+      content="LivinCraft is the best interior design company in Trivandrum, Kerala, India. We create luxury home interiors, modern office spaces, and elegant commercial designs. Elevate your space with our expert designers today!"
+    />
+
+    <!-- SEO Optimized Meta Keywords -->
+    <meta
+      name="keywords"
+      content="Best Interior Designers in Trivandrum, Interior Design Company in Thiruvananthapuram, Luxury Interiors Kerala, Home Interiors Trivandrum, Commercial Interior Designers Kerala, Modular Kitchen Kerala, Office Interior Design India, LivinCraft Interiors"
+    />
+
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>Interior</title>
+    <title>
+      Best Interior Designers Company in India - Livincraft - About Us
+    </title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
@@ -34,10 +50,49 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script>
+      var url =
+        "https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?91485";
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url;
+      var options = {
+        enabled: true,
+        chatButtonSetting: {
+          backgroundColor: "#00e785",
+          ctaText: "Chat with us",
+          borderRadius: "25",
+          marginLeft: "0",
+          marginRight: "20",
+          marginBottom: "20",
+          ctaIconWATI: false,
+          position: "right",
+        },
+        brandSetting: {
+          brandName: "Livincraft",
+          brandSubTitle: "undefined",
+          brandImg: "img/Livincraft_chat.png",
+          welcomeText: "Hi there!\nHow can I help you?",
+          messageText:
+            "I have a question about LivinCraft's interior design services.",
+          backgroundColor: "white",
+          ctaText: "Chat with us",
+          borderRadius: "25",
+          autoShow: false,
+          phoneNumber: "919847365675",
+        },
+      };
+      s.onload = function () {
+        CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
   </head>
   <body>
     <header id="header" id="home">
-      <div class="header-top">
+      <div class="header-top" id="header-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
@@ -100,7 +155,31 @@
       </div>
     </header>
     <!-- #header -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const headerTop = document.getElementById("header-top");
 
+        if (headerTop) {
+          window.addEventListener("scroll", function () {
+            let scrollTop =
+              window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+              // Scrolling down
+              headerTop.classList.add("hide-header");
+            } else {
+              // Scrolling up
+              headerTop.classList.remove("hide-header");
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+          });
+        } else {
+          console.error('Element with ID "header-top" not found.');
+        }
+      });
+    </script>
     <!-- start banner Area -->
     <section class="banner-area relative" id="home">
       <div class="overlay overlay-bg"></div>
@@ -124,18 +203,16 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 about-video-left">
-            <h6 class="text-uppercase">Brand new app to blow your mind</h6>
-            <h1>
-              We’ve made a life <br />
-              that will change you
-            </h1>
+            <h6 class="text-uppercase">About Us</h6>
+            <h1>Who We Are</h1>
             <p>
-              <span>We are here to listen from you deliver exellence</span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim.
+              At Livincraft, we believe great design is more than just
+              aesthetics—it’s about creating meaningful spaces that reflect your
+              lifestyle and aspirations. With a keen eye for detail and a
+              commitment to quality, we specialize in crafting bespoke interiors
+              that are both elegant and functional. Our expertise spans across
+              residential, commercial, and hospitality projects, ensuring every
+              space we design is timeless and inspiring
             </p>
             <a class="primary-btn mt-30" href="#">Get Started Now</a>
           </div>
@@ -143,9 +220,7 @@
             class="col-lg-6 about-video-right justify-content-center align-items-center d-flex relative"
           >
             <div class="overlay overlay-bg"></div>
-            <a
-              class="play-btn"
-              href="https://www.youtube.com/watch?v=ARA0AxrnHdM"
+            <a class="play-btn" href="#"
               ><img class="img-fluid mx-auto" src="img/play-btn.png" alt=""
             /></a>
           </div>
@@ -159,83 +234,62 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-12 pb-40 header-text text-center">
-            <h1 class="pb-10 text-white">Some Features that Made us Unique</h1>
-            <p class="text-white">
-              Who are in extremely love with eco friendly system.
-            </p>
+            <h1 class="pb-10 text-white">Why Choose Us?</h1>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="single-feature">
               <a href="#" class="title d-flex flex-row align-items-center">
-                <span class="lnr lnr-user"></span>
-                <h4>Expert Technicians</h4>
-              </a>
-              <p>
-                Computer users and programmers have become so accustomed to
-                using Windows, even for the changing.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-feature">
-              <a href="#" class="title d-flex flex-row align-items-center">
                 <span class="lnr lnr-license"></span>
-                <h4>Professional Service</h4>
+                <h4>Premium Craftsmanship</h4>
               </a>
-              <p>
-                Finding the perfect learning tool for Flash is a daunting task
-                to any novice web developer. One can find help.
-              </p>
+              <p>Excellence in every detail</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="single-feature">
               <a href="#" class="title d-flex flex-row align-items-center">
                 <span class="lnr lnr-phone"></span>
-                <h4>Great Support</h4>
+                <h4>End-to-End Solutions</h4>
               </a>
-              <p>
-                While most people enjoy casino ambling, sports betting, lottery
-                and bingo playing for the fun and excitement.
-              </p>
+              <p>From concept to execution.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="single-feature">
               <a href="#" class="title d-flex flex-row align-items-center">
                 <span class="lnr lnr-rocket"></span>
-                <h4>Technical Skills</h4>
+                <h4>Client-Centric Approach</h4>
               </a>
-              <p>
-                “The moment you think of buying a Web Hosting Plan, you know one
-                thing – So many choices, which one to choose.
-              </p>
+              <p>Your vision, our expertise.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature">
+              <a href="#" class="title d-flex flex-row align-items-center">
+                <span class="lnr lnr-user"></span>
+                <h4>Tailor-Made Designs</h4>
+              </a>
+              <p>We create interiors that are uniquely yours.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="single-feature">
               <a href="#" class="title d-flex flex-row align-items-center">
                 <span class="lnr lnr-diamond"></span>
-                <h4>Highly Recomended</h4>
+                <h4>Timely Delivery</h4>
               </a>
-              <p>
-                Many conventional colleges and universities are now offering
-                online DVD repair courses, which are the exact same.
-              </p>
+              <p>We value your time and ensure on-time project completion.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="single-feature">
               <a href="#" class="title d-flex flex-row align-items-center">
                 <span class="lnr lnr-bubble"></span>
-                <h4>Positive Reviews</h4>
+                <h4>Sustainable Practices</h4>
               </a>
-              <p>
-                So you have your new digital camera and clicking away to glory
-                anything and everything in sight. Now you want.
-              </p>
+              <p>Eco-friendly designs for a greener tomorrow.</p>
             </div>
           </div>
         </div>
@@ -562,15 +616,15 @@
             <div class="single-footer-widget">
               <h6>About Us</h6>
               <p>
-                If you own an Iphone, you’ve probably already worked out how
-                much fun it is to use it to watch movies-it has that.
+                At LivinCraft, we create bespoke interiors that blend elegance
+                with functionality. Our expertise spans residential, commercial,
+                and hospitality spaces, ensuring timeless designs. Let’s craft a
+                space that reflects your lifestyle!
               </p>
               <p class="footer-text">
-                Copyright &copy; 
-                 2025 
-                All rights reserved | Developed by 
+                Copyright &copy; 2025 All rights reserved | Developed by
                 <a href="https://www.trivochi.com" target="_blank">Trivochi</a>
-            </p>
+              </p>
             </div>
           </div>
           <div class="col-lg-5 col-md-6 col-sm-6">
@@ -581,7 +635,7 @@
                 <form
                   target="_blank"
                   novalidate="true"
-                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  action=""
                   method="get"
                   class="form-inline"
                 >

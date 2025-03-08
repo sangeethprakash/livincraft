@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
   <head>
-    <!-- Mobile Specific Meta -->
+    <!-- Mobile Friendly Meta -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/fav.png" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/Livincraft_chat.png" />
+
     <!-- Author Meta -->
-    <meta name="author" content="colorlib" />
-    <!-- Meta Description -->
-    <meta name="description" content="" />
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="" />
+    <meta
+      name="author"
+      content="LivinCraft - Best Interior Designers in Trivandrum"
+    />
+
+    <!-- SEO Optimized Meta Description -->
+    <meta
+      name="description"
+      content="LivinCraft is the best interior design company in Trivandrum, Kerala, India. We create luxury home interiors, modern office spaces, and elegant commercial designs. Elevate your space with our expert designers today!"
+    />
+
+    <!-- SEO Optimized Meta Keywords -->
+    <meta
+      name="keywords"
+      content="Best Interior Designers in Trivandrum, Interior Design Company in Thiruvananthapuram, Luxury Interiors Kerala, Home Interiors Trivandrum, Commercial Interior Designers Kerala, Modular Kitchen Kerala, Office Interior Design India, LivinCraft Interiors"
+    />
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>Interior</title>
+    <title>Best Interior Designers Company in India - Livincraft</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
@@ -34,10 +47,49 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script>
+      var url =
+        "https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?91485";
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url;
+      var options = {
+        enabled: true,
+        chatButtonSetting: {
+          backgroundColor: "#00e785",
+          ctaText: "Chat with us",
+          borderRadius: "25",
+          marginLeft: "0",
+          marginRight: "20",
+          marginBottom: "20",
+          ctaIconWATI: false,
+          position: "right",
+        },
+        brandSetting: {
+          brandName: "Livincraft",
+          brandSubTitle: "undefined",
+          brandImg: "img/Livincraft_chat.png",
+          welcomeText: "Hi there!\nHow can I help you?",
+          messageText:
+            "I have a question about LivinCraft's interior design services.",
+          backgroundColor: "white",
+          ctaText: "Chat with us",
+          borderRadius: "25",
+          autoShow: false,
+          phoneNumber: "919847365675",
+        },
+      };
+      s.onload = function () {
+        CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
   </head>
   <body class="blog-page">
     <header id="header" id="home">
-      <div class="header-top">
+      <div class="header-top" id="header-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
@@ -103,7 +155,31 @@
       </div>
     </header>
     <!-- #header -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const headerTop = document.getElementById("header-top");
 
+        if (headerTop) {
+          window.addEventListener("scroll", function () {
+            let scrollTop =
+              window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+              // Scrolling down
+              headerTop.classList.add("hide-header");
+            } else {
+              // Scrolling up
+              headerTop.classList.remove("hide-header");
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+          });
+        } else {
+          console.error('Element with ID "header-top" not found.');
+        }
+      });
+    </script>
     <!-- start banner Area -->
     <section class="banner-area relative" id="home">
       <div class="overlay overlay-bg"></div>
@@ -642,15 +718,15 @@
             <div class="single-footer-widget">
               <h6>About Us</h6>
               <p>
-                If you own an Iphone, you’ve probably already worked out how
-                much fun it is to use it to watch movies-it has that.
+                At LivinCraft, we create bespoke interiors that blend elegance
+                with functionality. Our expertise spans residential, commercial,
+                and hospitality spaces, ensuring timeless designs. Let’s craft a
+                space that reflects your lifestyle!
               </p>
               <p class="footer-text">
-                Copyright &copy; 
-                 2025 
-                All rights reserved | Developed by 
+                Copyright &copy; 2025 All rights reserved | Developed by
                 <a href="https://www.trivochi.com" target="_blank">Trivochi</a>
-            </p>
+              </p>
             </div>
           </div>
           <div class="col-lg-5 col-md-6 col-sm-6">
@@ -661,7 +737,7 @@
                 <form
                   target="_blank"
                   novalidate="true"
-                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  action=""
                   method="get"
                   class="form-inline"
                 >
