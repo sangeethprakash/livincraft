@@ -1603,7 +1603,13 @@ h6 {
 .header-top {
   font-size: 12px;
   padding: 8px;
+  background-color: gray;
 }
+
+.hide-header {
+  display: none;
+}
+
 .header-top a {
   color: #fff;
 }
@@ -1663,7 +1669,6 @@ h6 {
 }
 .main-menu {
   padding-top: 20px;
-  border-top: 1px solid #39353e;
 }
 #header {
   padding: 0px 0px 20px 0px;
@@ -1673,10 +1678,11 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color: white;
 }
 #header.header-scrolled {
   transition: all 0.5s;
-  background-color: #b8b8b8;
+  background-color: white;
 }
 @media (max-width: 673px) {
   #logo {
@@ -1763,7 +1769,7 @@ h6 {
   padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: black;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;

@@ -37,7 +37,7 @@
   </head>
   <body>
     <header id="header" id="home">
-      <div class="header-top">
+      <div class="header-top" id="header-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
@@ -100,7 +100,30 @@
       </div>
     </header>
     <!-- #header -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          let lastScrollTop = 0;
+          const headerTop = document.getElementById('header-top');
 
+          if (headerTop) {
+              window.addEventListener('scroll', function () {
+                  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                  if (scrollTop > lastScrollTop) {
+                      // Scrolling down
+                      headerTop.classList.add('hide-header');
+                  } else {
+                      // Scrolling up
+                      headerTop.classList.remove('hide-header');
+                  }
+
+                  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+              });
+          } else {
+              console.error('Element with ID "header-top" not found.');
+          }
+      });
+  </script>
     <!-- start banner Area -->
     <section class="banner-area relative" id="home">
       <div class="overlay overlay-bg"></div>

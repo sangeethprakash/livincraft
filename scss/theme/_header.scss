@@ -4,6 +4,7 @@
 .header-top {
   font-size: 12px;
   padding: 8px;
+
   a {
     color: #fff;
   }
@@ -27,6 +28,10 @@
       }
     }
   }
+
+  .hide-header {
+    display: none;
+}
 
   .header-top-left {
     text-align: left;
@@ -60,7 +65,6 @@
 
 .main-menu {
   padding-top: 20px;
-  border-top: 1px solid #39353e;
 }
 
 #header {
